@@ -23,7 +23,7 @@ function users(page = '') {
         .then((result) => {
             if (result.status === 200) {
                 let listUsers = `
-                <button type="button" class="btn btn-outline-success mb-4" onclick="addUser()"><i class="fa-solid fa-user-plus"></i></button>
+                <button type="button" class="btn btn-outline-primary mb-4" onclick="addUser()"><i class="fa-solid fa-user-plus"></i></button>
                 <table class="table table-striped">
                     <thead class="table-dark">
                         <tr>
@@ -127,7 +127,7 @@ function showModalUser(user) {
         <div class="modal-content">
           <div class="modal-header">
             <h1 class=" fw-bolder fs-2 modal-title fs-5" id="modalUserLabel">Información del Usuario <i class="fa-regular fa-user"></i></h1>
-            <button type="button" class=" btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            <button type="button" class=" btn-outline-secondary" data-bs-dismiss="modal" aria-label="Cerrar"></button>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -152,7 +152,7 @@ function showModalUser(user) {
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
           </div>
         </div>
       </div>
@@ -207,8 +207,8 @@ function addUser() {
               </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary" onclick="submitForm()">Guardar</button>
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-outline-primary" onclick="submitForm()">Guardar</button>
             </div>
           </div>
         </div>

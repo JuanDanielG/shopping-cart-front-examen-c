@@ -8,7 +8,7 @@ async function getProducts() {
 
         if (data.products?.length > 0) {
             let listProducts = `
-            <button type="button" class="btn btn-outline-success mb-4" onclick="addProduct()"><i class="fa-solid fa-square-plus"></i></button>
+            <button type="button" class="btn btn-outline-primary mb-4" onclick="addProduct()"><i class="fa-solid fa-square-plus"></i></button>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -78,7 +78,7 @@ function showModalProduct(product) {
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="fw-bolder fs-2 modal-title">${product.title}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        <button type="button" class="btn-outline-secondary" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body">
                         <div class="row">
@@ -101,7 +101,7 @@ function showModalProduct(product) {
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                 </div>
             </div>
@@ -169,8 +169,8 @@ function addProduct() {
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" onclick="submitProductForm()">Guardar</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-primary" onclick="submitProductForm()">Guardar</button>
           </div>
         </div>
       </div>

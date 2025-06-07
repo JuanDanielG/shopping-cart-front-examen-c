@@ -10,7 +10,7 @@ function getCarts() {
         .then(data => {
             if (data.carts && data.carts.length > 0) {
                 let listCarts = `
-                <button type="button" class="btn btn-outline-success mb-4" onclick="addCart()"><i class="fa-solid fa-cart-plus"></i></button>
+                <button type="button" class="btn btn-outline-primary mb-4" onclick="addCart()"><i class="fa-solid fa-cart-plus"></i></button>
                 <table class="table">
                     <thead>
                         <tr>
@@ -154,8 +154,8 @@ function addCart() {
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" onclick="submitCartProductForm()">Agregar al carrito</button>
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-outline-primary" onclick="submitCartProductForm()">Agregar al carrito</button>
           </div>
         </div>
       </div>
